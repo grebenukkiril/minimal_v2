@@ -1,0 +1,52 @@
+@import "../utils/vars";
+@import "../utils/mixin";
+.reviews {
+    margin-bottom: 100px;
+    &__content {
+        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: column);
+        .reviews-list {
+            @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 24px, $flexDirection: row);
+            &__item {
+                @include displayFlax ($alignItems: flex-start, $justifyContent: center, $gap: 16px, $flexDirection: column);
+                padding: 32px;
+            }
+            &__text {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+            }
+        }
+        .user-information {
+            display: grid;
+            grid-template-rows: 37px 24px;
+            grid-template-columns: 56px 189px;
+            row-gap: 4px;
+            column-gap: 14px;
+            &__user-image {
+                grid-row: 1/3;
+            }
+            &__user-name {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 45px;
+                text-transform: uppercase;
+            }
+            &__feedback-date {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                opacity: 0.8;
+            }
+        }
+    }
+    &__title {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45px;
+        text-transform: uppercase;
+    }
+}

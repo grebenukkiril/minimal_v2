@@ -1,0 +1,68 @@
+@import "../utils/vars";
+@import "../utils/mixin";
+.newsletter {
+    margin-bottom: 86px;
+    &__content {
+        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 100px, $flexDirection: row);
+        .newsletter-form {
+            @include displayFlax ($alignItems: flex-start, $justifyContent: center, $gap: 20px, $flexDirection: column);
+            &__title {
+                color: var(--Blue-font, #0A224A);
+                font-family: Roboto;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 45px;
+                text-transform: uppercase;
+            }
+            &__text {
+                color: var(--Blue-font, #0A224A);
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+            }
+            &__input-wrapper {
+                width: 536px;
+            }
+            &__input {
+                padding: 11px 20px;
+                width: 100%;
+                border: 1px solid;
+                border-color: #B6B6B6;
+                &::placeholder{
+                    color: #D9D9D9;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27px;
+                }
+            }
+            &__input-chekbox-wrapper {
+                @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 20px, $flexDirection: row);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+            }
+            &__input-chekbox {
+                width: 25px;
+                height: 25px;
+            }
+            &__btn {
+                padding: 17px 65px;
+                background-color: #0A224A;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                accent-color: #0A224A;
+            }
+        }
+    }
+    &__img{
+        width: 460px;
+        height: 410px;
+    }
+}

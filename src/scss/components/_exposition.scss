@@ -1,0 +1,222 @@
+@import "../utils/vars";
+@import "../utils/mixin";
+.exposition {
+    margin-bottom: 100px;
+    &__img-adaptive{
+        width: 704px;
+        height: 540px;
+        display: none;
+    }
+    &__img{
+        width: 506px;
+        height: 540px;
+    }
+    &__text-wrapper{
+        @include displayFlax ($alignItems: flex-start, $justifyContent: center, $gap: 30px, $flexDirection: column);
+    }
+    &__content {
+        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 24px, $flexDirection: row);
+    }
+    &__information {
+        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: column);
+        background-color: #F7FAFF;
+        padding: 36px 69px 37px;
+        text-align: left;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 20px, $flexDirection: row);
+        &::before{
+            content: '';
+            width: 30px;
+            height: 1px;
+            background-color: $mainTextColor;
+        }
+    }
+    &__title {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45px;
+        text-transform: uppercase;
+    }
+    &__text{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    .facts-list {
+        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 56px, $flexDirection: row);
+        text-align: center;
+        &__item{
+            &::before {
+                content: "5+";
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 75px;
+                text-transform: uppercase;
+            }
+            &:nth-child(2)::before{
+                content: "100%";
+            }
+            &:nth-child(3)::before{
+                content: "500+";
+            }
+        }
+        &__text {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            width: 170px;
+        }
+    }
+}
+@media (max-width: 1320px){
+    .exposition{
+        &__img{
+            width: 405px;
+            height: 510px;
+        }
+        &__information{
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+}
+@media  (max-width: 1200px){
+    .exposition{
+        &__content{
+            gap: 15px;
+        }
+        &__img{
+            width: 405px;
+            height: 510px;
+        }
+        &__information{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        &__text-wrapper{
+            width: 500px;
+        }
+        .facts-list{
+            gap: 39px;
+        }
+    }
+}
+@media (max-width:1112px){
+    .exposition{
+        &__content{
+            gap: 30px;
+            flex-direction: column;
+        }
+        &__img{
+            display: none;
+        }
+        &__img-adaptive{
+            display: block;
+        }
+        &__information{
+            padding-left: 64px;
+            padding-right: 64px;
+            padding-bottom: 36px;
+        }
+        &__text-wrapper{
+            width: 622px;
+        }
+        .facts-list{
+            gap: 39px;
+        }
+    }
+}
+@media (max-width:768px) {
+    .exposition{
+        &__content{
+            gap: 30px;
+            flex-direction: column;
+        }
+        &__img{
+            display: none;
+        }
+        &__img-adaptive{
+            display: block;
+        }
+        &__information{
+            padding-left: 64px;
+            padding-right: 64px;
+            padding-bottom: 36px;
+        }
+        &__text-wrapper{
+            width: 576px;
+        }
+        .facts-list{
+            gap: 33px;
+        }
+    }
+}
+@media (max-width: 704px){
+    .exposition{
+        &__content{
+            gap: 30px;
+            flex-direction: column;
+        }
+        &__img-adaptive{
+            width: 568px;
+            height: 400px;
+        }
+        &__information{
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 36px;
+        }
+        &__text-wrapper{
+            width: 440px;
+        }
+        .facts-list{
+            gap: 30px;
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width:568px){
+    .exposition{
+        background-image: url(../img/exposition/bd-img-adaptive.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 568px 400px;
+        &__content{
+            gap: 0;
+            padding-bottom: 400px;
+        }
+        &__img-adaptive {
+            display: none;
+        }
+        &__text-wrapper{
+            width: 100%;
+        }
+        &__title{
+            font-size: 28px;
+        }
+        &__information{
+            padding: 64px 16px;
+        }
+    }
+}
+@media (max-width:374px){
+    .exposition{
+        background-image: url(../img/exposition/bd-img-adaptive-mobile.png);
+        background-size: 374px 400px;
+        &__text{
+            font-size: 16px;
+        }
+        &__title{
+            font-size: 26px;
+        }
+    }
+}
