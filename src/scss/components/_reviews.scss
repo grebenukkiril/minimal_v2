@@ -2,6 +2,7 @@
 @import "../utils/mixin";
 .reviews {
     margin-bottom: 100px;
+    background-color: #F7FAFF;
     &__content {
         @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: column);
         .reviews-list {
@@ -48,5 +49,21 @@
         font-weight: 400;
         line-height: 45px;
         text-transform: uppercase;
+    }
+}
+@media (max-width:1320px){
+    // .reviews{
+    //     &__content {
+    //         .reviews-list{
+
+    //         }
+    //     }
+    // }
+    .reviews{
+        &__content {
+            .reviews-list{
+                
+            }
+        }
     }
 }
