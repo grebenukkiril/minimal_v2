@@ -3,7 +3,7 @@
 .bestsellers {
     margin-bottom: 100px;
     &__content {
-        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: column);
+        @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: column);
         .bestsellers-catalog {
             display: grid;
             grid-template-columns: 536px repeat(2, 258px);
@@ -12,7 +12,7 @@
             grid-row-gap: 30px;
             margin: 0 auto;
             &__item {
-                @include displayFlax ($alignItems: flex-start, $justifyContent: center, $gap: 10px, $flexDirection: column);
+                @include displayFlex ($alignItems: flex-start, $justifyContent: center, $gap: 10px, $flexDirection: column);
                 font-size: 18px;
                 font-style: normal;
                 line-height: 27px;

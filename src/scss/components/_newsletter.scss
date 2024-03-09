@@ -3,9 +3,9 @@
 .newsletter {
     margin-bottom: 86px;
     &__content {
-        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 100px, $flexDirection: row);
+        @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 100px, $flexDirection: row);
         .newsletter-form {
-            @include displayFlax ($alignItems: flex-start, $justifyContent: center, $gap: 20px, $flexDirection: column);
+            @include displayFlex ($alignItems: flex-start, $justifyContent: center, $gap: 20px, $flexDirection: column);
             &__title {
                 color: var(--Blue-font, #0A224A);
                 font-family: Roboto;
@@ -40,7 +40,7 @@
                 }
             }
             &__input-chekbox-wrapper {
-                @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 20px, $flexDirection: row);
+                @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 20px, $flexDirection: row);
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;

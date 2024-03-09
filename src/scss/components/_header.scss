@@ -5,18 +5,18 @@
     margin-bottom: 64px;
     &__inner {
         .navbar {
-            @include displayFlax ($alignItems: center, $justifyContent: space-between, $gap: 0, $flexDirection: row);
+            @include displayFlex ($alignItems: center, $justifyContent: space-between, $gap: 0, $flexDirection: row);
             padding: 34px 0;
         }
         .logo {
             z-index: 5;
-            @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 0, $flexDirection: row);
+            @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 0, $flexDirection: row);
             &__svg {
                 fill: $mainTextColor;
             }
         }
         .menu {
-            @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: row);
+            @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: row);
             &__item {
                 transition: transform 250ms;
                 &:hover{

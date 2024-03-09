@@ -3,11 +3,11 @@
 .reviews {
     margin-bottom: 100px;
     &__content {
-        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: column);
+        @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: column);
         .reviews-list {
-            @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 24px, $flexDirection: row);
+            @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 24px, $flexDirection: row);
             &__item {
-                @include displayFlax ($alignItems: flex-start, $justifyContent: center, $gap: 16px, $flexDirection: column);
+                @include displayFlex ($alignItems: flex-start, $justifyContent: center, $gap: 16px, $flexDirection: column);
                 padding: 32px;
             }
             &__text {

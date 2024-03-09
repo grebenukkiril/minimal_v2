@@ -3,7 +3,7 @@
 .hero {
     margin-bottom: 100px;
     &__content {
-        @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 25px, $flexDirection: row);
+        @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 25px, $flexDirection: row);
     }
     &__decoration {
         background-image: url(../img/chapter1/group-bg-2.png);
@@ -20,7 +20,7 @@
         padding-bottom: 380px;
     }
     &__information {
-        @include displayFlax ($alignItems: flex-start, $justifyContent: center, $gap: 30px, $flexDirection: column);
+        @include displayFlex ($alignItems: flex-start, $justifyContent: center, $gap: 30px, $flexDirection: column);
         background-image: url(../img/chapter1/image3.png);
         background-repeat: no-repeat;
         background-position: 0 0;

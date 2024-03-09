@@ -8,7 +8,7 @@
         border-left: none;
         overflow: hidden;
         &__item {
-            @include displayFlax ($alignItems: center, $justifyContent: space-between, $gap: 0, $flexDirection: row);
+            @include displayFlex ($alignItems: center, $justifyContent: space-between, $gap: 0, $flexDirection: row);
             font-style: normal;
             border: 0.5px solid #0A224A;
             border-right: none;
@@ -37,7 +37,7 @@
             font-weight: 400;
             line-height: 45px;
             text-transform: uppercase;
-            @include displayFlax ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: row);
+            @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: row);
         }
         &__value {
             font-size: 18px;
