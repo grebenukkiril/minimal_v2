@@ -8,7 +8,7 @@
             @include displayFlex ($alignItems: flex-start, $justifyContent: center, $gap: 21px, $flexDirection: column);
             width: 536px;
             &__title {
-                color: var(--Blue-font, #0A224A);
+                color: var(--Blue-font, $darkBlueColor);
                 font-family: Roboto;
                 font-size: 32px;
                 font-style: normal;
@@ -17,7 +17,7 @@
                 text-transform: uppercase;
             }
             &__text {
-                color: var(--Blue-font, #0A224A);
+                color: var(--Blue-font, $darkBlueColor);
                 font-family: Roboto;
                 font-size: 18px;
                 font-style: normal;
@@ -42,10 +42,10 @@
                     line-height: 27px;
                 }
                 &:focus{
-                    border: 1px solid #0A224A;
+                    border: 1px solid $darkBlueColor;
                     outline: none;
                     &::placeholder{
-                        color: #0A224A;
+                        color: $darkBlueColor;
                     }
                 }
             }
@@ -60,11 +60,11 @@
             &__input-chekbox {
                 width: 25px;
                 height: 25px;
-                accent-color: #0A224A;
+                accent-color: $darkBlueColor;
             }
             &__btn {
                 padding: 17px 91px;
-                background-color: #0A224A;
+                background-color: $darkBlueColor;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;

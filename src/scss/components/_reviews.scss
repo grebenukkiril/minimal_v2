@@ -11,7 +11,7 @@
             &__item {
                 @include displayFlex ($alignItems: flex-start, $justifyContent: center, $gap: 16px, $flexDirection: column);
                 padding: 32px;
-                background-color: #fff;
+                background-color: $whiteColor;
                 border-radius: 8px;
             }
             &__text {

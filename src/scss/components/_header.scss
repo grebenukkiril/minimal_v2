@@ -9,10 +9,10 @@
             padding: 34px 0;
         }
         .logo {
-            z-index: 5;
+            z-index: 30;
             @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 0, $flexDirection: row);
             &__svg {
-                fill: $mainTextColor;
+                fill: $darkBlueColor;
             }
         }
         .menu {
@@ -39,14 +39,14 @@
         height: 40px;
         position: relative;
         display: none;
-        z-index: 5;
-        background-color: #ffffff00;
+        z-index: 30;
+        background-color: #f7faff00;
     }
     &__burger-span{
         position: absolute;
         width: 30px;
         height: 3px;
-        background-color: $mainTextColor;
+        background-color: $darkBlueColor;
         right: 5px;
         transition: transform 200ms, opacity 180ms;
         &:nth-child(1){
@@ -92,11 +92,11 @@
             left: 0;
             top: -100%;
             flex-direction: column;
-            background-color: #fff;
+            background-color: $whiteColor;
             width: 100vw;
             height: 100vh;
             transition: top 200ms;
-            z-index: 4;
+            z-index: 25;
         }
         .logo{
             width: 128px;

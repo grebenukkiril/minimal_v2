@@ -33,13 +33,13 @@
         width: 306px;
     }
     &__btn {
-        color: $btnTextColor;
+        color: $whiteColor;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
         padding: 17px 65px;
-        background-color: $mainTextColor;
+        background-color: $darkBlueColor;
     }
 }
 @media (max-width: 1024px) {

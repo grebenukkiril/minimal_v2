@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6, p, li, ul, button {
   padding: 34px 0;
 }
 .header__inner .logo {
-  z-index: 5;
+  z-index: 30;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,8 +80,8 @@ h1, h2, h3, h4, h5, h6, p, li, ul, button {
   height: 40px;
   position: relative;
   display: none;
-  z-index: 5;
-  background-color: rgba(255, 255, 255, 0);
+  z-index: 30;
+  background-color: rgba(247, 250, 255, 0);
 }
 .header__burger-span {
   position: absolute;
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6, p, li, ul, button {
     width: 100vw;
     height: 100vh;
     transition: top 200ms;
-    z-index: 4;
+    z-index: 25;
   }
   .header .logo {
     width: 128px;

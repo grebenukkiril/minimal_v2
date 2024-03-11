@@ -3,14 +3,14 @@
 .prise {
     margin-bottom: 100px;
     .prise-list {
-        border: 0.5px solid #0A224A;
+        border: 0.5px solid $darkBlueColor;
         border-right: none;
         border-left: none;
         overflow: hidden;
         &__item {
             @include displayFlex ($alignItems: center, $justifyContent: space-between, $gap: 0, $flexDirection: row);
             font-style: normal;
-            border: 0.5px solid #0A224A;
+            border: 0.5px solid $darkBlueColor;
             border-right: none;
             border-left: none;
             padding: 30px 0;
@@ -21,7 +21,7 @@
                 position: absolute;
                 width: 50px;
                 height: 1px;
-                background-color: #0A224A;
+                background-color: $darkBlueColor;
                 transition: all 200ms;
                 left: -100%;
             }

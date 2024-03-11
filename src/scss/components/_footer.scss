@@ -1,8 +1,8 @@
 @import "../utils/vars";
 @import "../utils/mixin";
 .footer {
-    background-color: #0A224A;
-    color: #fff;
+    background-color: $darkBlueColor;
+    color: $whiteColor;
     &__inner {
         @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 35px, $flexDirection: column);
         padding: 36px 60px;
@@ -30,7 +30,7 @@
     }
 }
 .logo--footer {
-    fill: #fff;   
+    fill: $whiteColor;   
     &__svg{
         width: 127px;
         height: 16px;
@@ -77,7 +77,7 @@
     }
     &__link {
         @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 0, $flexDirection: row);
-        fill: #fff;
+        fill: $whiteColor;
         width: 100%;
         height: 100%;
         transition: all 400ms;
