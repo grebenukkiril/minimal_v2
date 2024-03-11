@@ -94,10 +94,6 @@
         &__content{
             gap: 15px;
         }
-        &__img{
-            width: 405px;
-            height: 510px;
-        }
         &__information{
             padding-left: 30px;
             padding-right: 30px;
@@ -130,28 +126,10 @@
         &__text-wrapper{
             width: 622px;
         }
-        .facts-list{
-            gap: 39px;
-        }
     }
 }
 @media (max-width:768px) {
     .exposition{
-        &__content{
-            gap: 30px;
-            flex-direction: column;
-        }
-        &__img{
-            display: none;
-        }
-        &__img-adaptive{
-            display: block;
-        }
-        &__information{
-            padding-left: 64px;
-            padding-right: 64px;
-            padding-bottom: 36px;
-        }
         &__text-wrapper{
             width: 576px;
         }
@@ -162,10 +140,6 @@
 }
 @media (max-width: 704px){
     .exposition{
-        &__content{
-            gap: 30px;
-            flex-direction: column;
-        }
         &__img-adaptive{
             width: 568px;
             height: 400px;
@@ -173,7 +147,6 @@
         &__information{
             padding-left: 30px;
             padding-right: 30px;
-            padding-bottom: 36px;
         }
         &__text-wrapper{
             width: 440px;
@@ -214,9 +187,11 @@
         background-size: 374px 400px;
         &__text{
             font-size: 16px;
+            line-height: 24px;
         }
         &__title{
             font-size: 26px;
+            line-height: 42px;
         }
     }
 }

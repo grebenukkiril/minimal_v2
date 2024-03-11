@@ -3,6 +3,7 @@
 .reviews {
     margin-bottom: 100px;
     background-color: #F7FAFF;
+    padding: 36px 0;
     &__content {
         @include displayFlex ($alignItems: center, $justifyContent: center, $gap: 30px, $flexDirection: column);
         .reviews-list {
@@ -10,6 +11,8 @@
             &__item {
                 @include displayFlex ($alignItems: flex-start, $justifyContent: center, $gap: 16px, $flexDirection: column);
                 padding: 32px;
+                background-color: #fff;
+                border-radius: 8px;
             }
             &__text {
                 font-size: 18px;
@@ -26,6 +29,8 @@
             column-gap: 14px;
             &__user-image {
                 grid-row: 1/3;
+                width: 56px;
+                height: 56px;
             }
             &__user-name {
                 font-size: 20px;
@@ -51,19 +56,88 @@
         text-transform: uppercase;
     }
 }
-@media (max-width:1320px){
-    // .reviews{
-    //     &__content {
-    //         .reviews-list{
-
-    //         }
-    //     }
-    // }
+@media (max-width:1112px){
     .reviews{
         &__content {
             .reviews-list{
-                
+                gap: 14px;
+                &__item{
+                    padding: 30px;
+                }
             }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .reviews{
+        &__content {
+            .reviews-list{
+                gap: 16px;
+                flex-wrap: wrap;
+                &__item {
+                    padding: 24px;
+                    &:nth-child(3){
+                        display: none;
+                    }
+                }
+                &__text{
+                    width: 296px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 704px){
+    .reviews{
+        &__content {
+            .reviews-list{
+                &__item {
+                    &:nth-child(3){
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 374px){
+    .reviews{
+        margin-bottom: 64px;
+        &__content {
+            .reviews-list{
+                gap: 24px;
+                &__text {
+                   font-size: 14px;
+                   line-height: 20px;
+                }
+                &__item {
+                    &:nth-child(2), &:nth-child(3){
+                        display: none;
+                    }
+                    padding: 24px 23px 24px 24px;
+                }
+            }
+            .user-information{
+                grid-template-rows: 28px 18px;
+                grid-template-columns: 48px 189px;
+                row-gap: 2px;
+                &__feedback-date{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                &__user-name{
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+                &__user-image{
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+        &__title{
+            font-size: 28px;
+            line-height: 42px;
         }
     }
 }
